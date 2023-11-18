@@ -140,7 +140,7 @@ router.post("/sendpasswordlink",async(req,res)=>{
                 from:process.env.MAIL_ID,
                 to:email,
                 subject:"Sending Email For password Reset",
-                text:`This Link expired after 3 minutes https://dancing-cupcake-3757ce.netlify.app/forgot-password/${userfind.id}/${setusertoken.verifytoken}`
+                text:`This Link expired after 3 minutes http://localhost:3000/forgot-password/${userfind.id}/${setusertoken.verifytoken}`
             }
 
             transporter.sendMail(mailOptions,(error,info)=>{
