@@ -16,9 +16,9 @@ app.use(router)
 const PORT = process.env.PORT
 
 //cheked
-// app.get('/', (req, res)=>{
-//     res.send('Server connected with locate host')
-// })
+app.get('/', (req, res)=>{
+    res.send('Loginform')
+})
 
 
 //Database connection
